@@ -1,0 +1,46 @@
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-fade-in-up.delay-100 {
+    animation-delay: 0.1s;
+}
+.animate-fade-in-up.delay-200 {
+    animation-delay: 0.2s;
+}
+.animate-fade-in-up.delay-300 {
+    animation-delay: 0.3s;
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+.animate-spin-slow {
+    animation: spinSlow 8s linear infinite;
+}

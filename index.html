@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tralert</title>
+    <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-900 to-teal-600 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+    
+            <!-- Logo with Icon - Added hover animation -->
+            <div class="flex items-center space-x-2 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="./assets/img/logo.png" alt="Logo" class="h-12 w-12 transition-all duration-300 hover:rotate-6">
+                <span class="text-white text-lg font-bold">Tralert</span>
+            </div>
+    
+            <!-- Desktop Menu - Enhanced with animated underline -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="relative text-white text-sm font-medium group">
+                    <span>Introduction</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#features" class="relative text-white text-sm font-medium group">
+                    <span>Features</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#unique" class="relative text-white text-sm font-medium group">
+                    <span>Unique Features</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#download" class="relative text-white text-sm font-medium group">
+                    <span>Download</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+    
+            <!-- Mobile Menu Button - Added animation -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white focus:outline-none transition-transform duration-300 active:scale-90 text-2xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu - Enhanced with slide-down animation -->
+        <div id="mobileMenu" class="hidden md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+            <div class="pt-2 pb-4 space-y-3">
+                <a href="#" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Introduction</a>
+                <a href="#features" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Features</a>
+                <a href="#unique" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Unique Features</a>
+                <a href="#download" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Download</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="bg-gradient-to-r from-blue-900 to-teal-600">
+        <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
+            <!-- Left: Text Content with entrance animations -->
+            <div class="md:w-1/2 text-white px-4 md:px-10 animate-fade-in-up">
+                <h1 class="text-xl md:text-4xl font-bold leading-tight animate-fade-in-up delay-100">
+                    Bitcoin, Ethereum, Crypto<br />
+                    News & Predictions
+                </h1>
+                <p class="mt-4 text-sm md:text-base text-white/80 animate-fade-in-up delay-200">
+                    Your smart crypto news tracker. Stay ahead with real-time alerts, AI-powered insights, and
+                    world-class expert predictions — all in one place.
+                </p>
+                <br>
+                <div class="text-center md:text-left animate-bounce hover:animate-pulse">
+                    <a href="#"
+                        class="inline-flex items-center mt-6 px-4 py-2 bg-black text-white text-sm font-semibold rounded-md shadow hover:scale-105 transition-transform duration-300 hover:shadow-lg">
+                        <img src="./assets/img/microsoftappstore.png" alt="Download Icon" class="w-8 h-8 mr-2 transition-transform duration-300 hover:rotate-12" />
+                        Download
+                        <img src="./assets/img/Vector.svg" alt="download" class="ml-4 transition-transform duration-300 hover:translate-y-1">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Right: Image with floating animation -->
+            <div class="md:w-1/2 flex justify-center animate-float">
+                <img src="./assets/img/iMac.png" alt="App Screenshot" class="w-full max-w-md md:max-w-lg transition-transform duration-1000 hover:scale-105" />
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="features">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 animate-fade-in-up">Powerful Investment Tools</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                We created the ultimate investment tool to help you pick winners and manage assets with ease. Every
+                feature has a purpose and they all work together seamlessly.
+            </p>
+        </div>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="text-[#FFCC1E] animate-spin-slow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Real-Time Crypto News Feed</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Stay informed with automatic updates every 15 minutes. Tralert pulls breaking news and market
+                        trends from over 50 trusted crypto sources.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Item 2 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="text-[#FFCC1E] animate-pulse">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 019 21v-7.586L3.293 6.707A1 1 0 013 6V4z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Customizable News Filters</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Follow specific tokens, projects, or categories. Build a personalized feed that cuts through the
+                        noise.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Item 3 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="text-yellow-500 w-16 h-16 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/chart.svg" alt="chart" class="w-8 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Expert Predictions & Market Insights</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Access exclusive predictions and commentary from top crypto analysts, researchers, and thought
+                        leaders — all in one curated stream.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Item 4 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="text-yellow-500 w-14 h-14 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/content.svg" alt="content" class="w-8 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">AI-Powered Content Prioritization</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Let Tralert's AI engine surface the most relevant stories based on your preferences, watchlist,
+                        and recent activity.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Item 5 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="w-20 h-20 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/cross.svg" alt="cross" class="w-8 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Cross-Platform Desktop App</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Built with Electron, Tralert runs smoothly on Windows, macOS, and Linux — offering a consistent
+                        experience everywhere.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Item 6 with hover animation -->
+            <div class="flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50 hover:shadow-md hover:-translate-y-1">
+                <div class="text-[#FFCC1E] transition-transform duration-300 hover:rotate-180">
+                    <svg class="svg-icon" style="width: 2em; height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M683.323077 710.892308c9.846154-9.846154 9.846154-25.6 0-35.446154l-35.446154-35.446154c-9.846154-9.846154-25.6-9.846154-35.446154 0l-86.646154 86.646154c-5.907692 5.907692-17.723077 5.907692-23.630769 0l-86.646154-86.646154c-9.846154-9.846154-25.6-9.846154-35.446154 0l-35.446153 35.446154c-9.846154 9.846154-9.846154 25.6 0 35.446154l86.646153 86.646154c5.907692 5.907692 5.907692 17.723077 0 23.630769l-86.646153 86.646154c-9.846154 9.846154-9.846154 25.6 0 35.446153l35.446153 35.446154c9.846154 9.846154 25.6 9.846154 35.446154 0l86.646154-86.646154c5.907692-5.907692 17.723077-5.907692 23.630769 0l86.646154 86.646154c9.846154 9.846154 25.6 9.846154 35.446154 0l35.446154-35.446154c9.846154-9.846154 9.846154-25.6 0-35.446153l-86.646154-86.646154c-5.907692-5.907692-5.907692-17.723077 0-23.630769l86.646154-86.646154z m256-482.461539c-108.307692-120.123077-261.907692-187.076923-425.353846-187.076923S196.923077 108.307692 88.615385 228.430769c-7.876923 7.876923-5.907692 21.661538 1.96923 27.569231l59.076923 51.2c7.876923 7.876923 19.692308 5.907692 27.569231-1.969231 86.646154-92.553846 208.738462-145.723077 336.738462-145.723077s250.092308 53.169231 336.738461 145.723077c7.876923 7.876923 19.692308 7.876923 27.569231 1.969231l59.076923-51.2c7.876923-7.876923 9.846154-19.692308 1.969231-27.569231z m-425.353846 88.615385c-82.707692 0-161.476923 35.446154-216.615385 98.461538-7.876923 7.876923-5.907692 21.661538 1.969231 29.538462l63.015385 47.261538c7.876923 5.907692 19.692308 5.907692 25.6-1.96923 33.476923-35.446154 78.769231-55.138462 126.030769-55.138462s92.553846 19.692308 124.061538 53.169231c5.907692 7.876923 17.723077 7.876923 25.6 1.969231l63.015385-47.261539c9.846154-7.876923 9.846154-19.692308 1.969231-29.538461-53.169231-61.046154-131.938462-96.492308-214.646154-96.492308z"  /></svg>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900">Offline Reading Mode</h3>
+                    <p class="mt-1 text-gray-600 text-sm">
+                        Save your favorite articles or expert takes to read later — even when you're offline or
+                        traveling.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-gradient-to-r from-blue-900 to-teal-600 text-white py-16 px-4 sm:px-6 lg:px-8" id="unique">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 animate-fade-in-up">Innovative Features You Won't Find Elsewhere</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                Beyond the basics of financial apps, Stocks Live offers innovative features that transform how you
+                research and manage investments.
+            </p>
+        </div>
+    
+        <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Feature 1 with hover animation -->
+            <div class="flex items-start space-x-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1">
+                <div class="flex-shrink-0 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/brain.png" alt="brain" class="w-12 h-12">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white">Smart Filtering & AI Highlights</h3>
+                    <p class="mt-1 text-blue-100 text-sm">
+                        Tralert uses intelligent algorithms and optional wallet integration (read-only) to tailor your
+                        news feed, highlighting the most relevant predictions and news based on your tokens and
+                        interests.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Feature 2 with hover animation -->
+            <div class="flex items-start space-x-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1">
+                <div class="text-yellow-300 flex-shrink-0 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/bell.png" alt="bell" class="w-12 h-12">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white">Push Notifications on Major Market Moves</h3>
+                    <p class="mt-1 text-blue-100 text-sm">
+                        Get instantly notified when significant price swings or breaking news hit the crypto market,
+                        keeping you one step ahead with real-time alerts.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Feature 3 with hover animation -->
+            <div class="flex items-start space-x-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1">
+                <div class="text-yellow-300 flex-shrink-0 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/prediction.png" alt="prediction" class="w-12 h-12">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white">Prediction Tracker</h3>
+                    <p class="mt-1 text-blue-100 text-sm">
+                        Don't just read forecasts — verify them. Tralert tracks expert predictions against actual market
+                        data to help you build trust in the voices you follow.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Feature 4 with hover animation -->
+            <div class="flex items-start space-x-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1">
+                <div class="text-yellow-300 flex-shrink-0 transition-transform duration-300 hover:scale-110">
+                    <img src="./assets/img/point.png" alt="point" class="w-12 h-12">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white">No Ads. No Noise.</h3>
+                    <p class="mt-1 text-blue-100 text-sm">
+                        Tralert is designed for focus. No ads, no sponsored posts, and no distractions. Just pure,
+                        curated information for serious traders and researchers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-blue-600 text-white py-16 px-4 sm:px-6 lg:px-8" id="download">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 animate-fade-in-up">
+                Ready to Transform Your Investment Experience?
+            </h2>
+            <p class="text-blue-100 mb-6 animate-fade-in-up delay-100">
+                Join thousands of investors who use Stocks Live to research, track, and optimize their investments.
+            </p>
+            <a href="#download"
+                class="inline-block bg-white text-gray-900 font-medium px-6 py-3 rounded hover:bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-lg animate-pulse">
+                Download Today
+            </a>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+    
+                <!-- Left: Logo and Description with animation -->
+                <div class="flex items-start space-x-4 ">
+                    <img src="./assets/img/logo.png" alt="Tralert Logo" class="w-12 h-12 transition-transform duration-300 hover:rotate-12">
+                    <div>
+                        <h2 class="text-white font-bold text-lg">Tralert LLC</h2>
+                        <p class="text-sm md:text-base">
+                            At <a href="#" class="text-blue-400 hover:underline transition-colors duration-300">Tralert LLC</a>, we focus on helping
+                            all traders improve their income by providing <br> real-time news along with expert predictions.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Right: Social Icons with hover animations -->
+                <div class="flex space-x-4 mx-auto md:mx-0">
+                    <a href="#" aria-label="Email" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/email.png" alt="email" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Facebook" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/facebook.png" alt="facebook" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/twitter.png" alt="twitter" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Instagram" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/instagram.png" alt="instagram" class="w-8 h-8">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Bottom Copyright with fade-in animation -->
+            <div class="mt-6 text-center text-sm text-gray-500 animate-fade-in-up delay-300">
+                Copyright © 2025 Tralert
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>
