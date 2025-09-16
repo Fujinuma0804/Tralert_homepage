@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tralert</title>
+    <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-900 to-teal-600 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+    
+            <!-- Logo with Icon - Added hover animation -->
+            <div class="flex items-center space-x-2 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <img src="./assets/img/logo.png" alt="Logo" class="h-12 w-12 transition-all duration-300 hover:rotate-6">
+                <span class="text-white text-lg font-bold">Tralert</span>
+            </div>
+    
+            <!-- Desktop Menu - Enhanced with animated underline -->
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="relative text-white text-sm font-medium group">
+                    <span>Home</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="./index.html#features" class="relative text-white text-sm font-medium group">
+                    <span>Features</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="./index.html#unique" class="relative text-white text-sm font-medium group">
+                    <span>Unique Features</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="./index.html#download" class="relative text-white text-sm font-medium group">
+                    <span>Download</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="relative text-white text-sm font-medium group">
+                    <span>Privacy Policy</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white"></span>
+                </a>
+            </div>
+    
+            <!-- Mobile Menu Button - Added animation -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white focus:outline-none transition-transform duration-300 active:scale-90 text-2xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu - Enhanced with slide-down animation -->
+        <div id="mobileMenu" class="hidden md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+            <div class="pt-2 pb-4 space-y-3">
+                <a href="./index.html" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Home</a>
+                <a href="./index.html#features" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Features</a>
+                <a href="./index.html#unique" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Unique Features</a>
+                <a href="./index.html#download" class="block text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 transform hover:translate-x-2">Download</a>
+                <a href="#" class="block text-white px-4 py-2 rounded-lg bg-white/10">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <section class="bg-white">
+        <div class="max-w-4xl mx-auto px-6 py-14 animate-fade-in-up">
+            <div class="mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 animate-fade-in-up">Privacy Policy</h1>
+                <p class="text-gray-600 mt-2 animate-fade-in-up delay-100">Last updated: September 15, 2025</p>
+            </div>
+
+            <div class="space-y-8 text-gray-700 leading-relaxed">
+                <div class="animate-fade-in-up">
+                    <h2 class="text-xl font-semibold text-gray-900">Introduction</h2>
+                    <p class="mt-2">At Tralert LLC ("Tralert", "we", "us", or "our"), we respect your privacy and are committed to protecting it through our compliance with this policy. This Privacy Policy describes the types of information we may collect from you or that you may provide when you use our website, application, and related services (collectively, the "Services"), and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+                </div>
+
+                <div class="animate-fade-in-up delay-100">
+                    <h2 class="text-xl font-semibold text-gray-900">Information We Collect</h2>
+                    <p class="mt-2">We may collect the following information when you use our Services:</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li><span class="font-medium">Account Information</span>: Name, email address, and settings you choose.</li>
+                        <li><span class="font-medium">Usage Data</span>: Interactions with features, pages viewed, links clicked, and app performance data.</li>
+                        <li><span class="font-medium">Device and Technical Data</span>: IP address, device type, operating system, browser type, app version, crash logs.</li>
+                        <li><span class="font-medium">Notifications Preferences</span>: Topics you follow and alert settings.</li>
+                        <li><span class="font-medium">Optional Wallet Data</span>: If you connect a read-only wallet, we may process public wallet addresses to tailor content. We do not request or store private keys.</li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in-up delay-200">
+                    <h2 class="text-xl font-semibold text-gray-900">How We Use Your Information</h2>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>Provide, maintain, and improve the Services.</li>
+                        <li>Customize content, including news filters and notifications.</li>
+                        <li>Monitor performance, troubleshoot issues, and ensure security.</li>
+                        <li>Communicate with you about updates, security alerts, and support.</li>
+                        <li>Comply with legal obligations and enforce our terms.</li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in-up">
+                    <h2 class="text-xl font-semibold text-gray-900">Sharing of Information</h2>
+                    <p class="mt-2">We do not sell your personal information. We may share information in the following situations:</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>With service providers that help operate our Services (under appropriate safeguards).</li>
+                        <li>To comply with laws, legal processes, or to protect rights, property, or safety.</li>
+                        <li>In connection with a merger, acquisition, or asset sale, subject to this Policy.</li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in-up delay-100">
+                    <h2 class="text-xl font-semibold text-gray-900">Cookies and Tracking</h2>
+                    <p class="mt-2">We may use cookies and similar technologies to remember preferences, understand usage, and improve the user experience. You can control cookies through your browser settings. Disabling cookies may affect certain features.</p>
+                </div>
+
+                <div class="animate-fade-in-up delay-200">
+                    <h2 class="text-xl font-semibold text-gray-900">Data Retention</h2>
+                    <p class="mt-2">We retain information for as long as necessary to provide the Services, comply with legal obligations, resolve disputes, and enforce our agreements. Retention periods vary by data type and context.</p>
+                </div>
+
+                <div class="animate-fade-in-up">
+                    <h2 class="text-xl font-semibold text-gray-900">Security</h2>
+                    <p class="mt-2">We implement administrative, technical, and physical safeguards designed to protect information. However, no system is completely secure, and we cannot guarantee absolute security.</p>
+                </div>
+
+                <div class="animate-fade-in-up delay-100">
+                    <h2 class="text-xl font-semibold text-gray-900">Your Choices & Rights</h2>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>Access, update, or delete certain account information.</li>
+                        <li>Manage notification preferences within the app or device settings.</li>
+                        <li>Opt out of marketing communications by following unsubscribe links.</li>
+                        <li>Depending on your location, you may have additional rights under applicable law.</li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in-up delay-200">
+                    <h2 class="text-xl font-semibold text-gray-900">Children's Privacy</h2>
+                    <p class="mt-2">Our Services are not directed to children under 13 (or other age as required by local law). We do not knowingly collect personal information from children.</p>
+                </div>
+
+                <div class="animate-fade-in-up">
+                    <h2 class="text-xl font-semibold text-gray-900">International Transfers</h2>
+                    <p class="mt-2">Your information may be processed and stored in countries other than your own. We take steps to ensure appropriate protections are in place consistent with applicable laws.</p>
+                </div>
+
+                <div class="animate-fade-in-up delay-100">
+                    <h2 class="text-xl font-semibold text-gray-900">Changes to This Policy</h2>
+                    <p class="mt-2">We may update this Privacy Policy from time to time. If we make material changes, we will notify you by updating the date at the top of this page and, where appropriate, by additional notice.</p>
+                </div>
+
+                <div class="animate-fade-in-up delay-200">
+                    <h2 class="text-xl font-semibold text-gray-900">Contact Us</h2>
+                    <p class="mt-2">If you have questions or concerns about this Privacy Policy, please contact us at <a href="#" class="text-blue-600 hover:underline">support@tralert.app</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+    
+                <!-- Left: Logo and Description with animation -->
+                <div class="flex items-start space-x-4 ">
+                    <img src="./assets/img/logo.png" alt="Tralert Logo" class="w-12 h-12 transition-transform duration-300 hover:rotate-12">
+                    <div>
+                        <h2 class="text-white font-bold text-lg">Tralert LLC</h2>
+                        <p class="text-sm md:text-base">
+                            At <a href="#" class="text-blue-400 hover:underline transition-colors duration-300">Tralert LLC</a>, we focus on helping
+                            all traders improve their income by providing <br> real-time news along with expert predictions.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Right: Social Icons with hover animations -->
+                <div class="flex space-x-4 mx-auto md:mx-0">
+                    <a href="#" aria-label="Email" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/email.png" alt="email" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Facebook" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/facebook.png" alt="facebook" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/twitter.png" alt="twitter" class="w-8 h-8">
+                    </a>
+                    <a href="#" aria-label="Instagram" class="hover:text-white transition-transform duration-300 hover:scale-125">
+                        <img src="./assets/img/instagram.png" alt="instagram" class="w-8 h-8">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Bottom Copyright with fade-in animation -->
+            <div class="mt-6 text-center text-sm text-gray-500 animate-fade-in-up delay-300">
+                Copyright © 2025 Tralert
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>
